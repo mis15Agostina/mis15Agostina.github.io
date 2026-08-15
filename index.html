@@ -11012,6 +11012,82 @@
                                         }
                                     </style>
                                 </head>
+                                <body>
+                                    <div id="welcomeScreen">
+                                        <div id="welcomeHeader" class="fade">
+                                            <h2></h2>
+                                            <h3></h3>
+                                        </div>
+                                        <div class="invite-card fade" id="envelope">
+                                            <p>
+                                                <strong id="nombreInvitado">INVITADO ESPECIAL</strong>
+                                            </p>
+                                            <p id="mensajeInvitado"></p>
+                                        </div>
+                                        <div class="footer-floating" id="footerText">HAZ CLIC PARA INGRESAR</div>
+                                    </div>
+                                    <button id="musicButton">
+                                        <i class="fas fa-pause"></i>
+                                    </button>
+                                    <audio id="bg-music" loop>
+                                        <source src="musica.mp3" type="audio/mpeg" />
+                                    </audio>
+                                    <script>
+                                        const params = new URLSearchParams(window.location.search);
+                                        const nombreParam = params.get("n");
+                                        const cantidadParam = params.get("c");
+                                        // Nombre
+                                        document.getElementById("nombreInvitado").textContent = (nombreParam || "INVITADO ESPECIAL").toUpperCase();
+                                        // Cantidad
+                                        let mensaje = "";
+                                        const cantidad = parseInt(cantidadParam);
+                                        if (cantidadParam === null) {
+                                            mensaje = `TENEMOS 1 LUGAR<br>RESERVADO PARA VOS`;
+                                        } else if (cantidad === 0) {
+                                            mensaje = `EL GRAN DÍA<br>ESTÁ LLEGANDO`;
+                                        } else if (cantidad === 1) {
+                                            mensaje = `TENEMOS 1 LUGAR<br>RESERVADO PARA VOS`;
+                                        } else {
+                                            mensaje = `TENEMOS ${cantidad} LUGARES<br>RESERVADOS PARA USTEDES`;
+                                        }
+                                        document.getElementById("mensajeInvitado").innerHTML = mensaje;
+                                        // Audio local
+                                        const bgMusic = document.getElementById('bg-music');
+                                        let isPlaying = false;
+                                        // Animaciones
+                                        window.addEventListener("DOMContentLoaded", () => {
+                                            setTimeout( () => document.getElementById("welcomeHeader").classList.add("show"), 600);
+                                            setTimeout( () => document.getElementById("envelope").classList.add("show"), 1900);
+                                            setTimeout( () => document.getElementById("footerText").classList.add("show"), 3200);
+                                        });
+                                        // Función para abrir invitación
+                                        function abrirInvitacion() {
+                                            const welcome = document.getElementById("welcomeScreen");
+                                            welcome.style.opacity = "0";
+                                            setTimeout( () => {
+                                                welcome.remove();
+                                                document.body.style.overflow = "auto";
+                                                document.getElementById("musicButton").style.display = "flex";
+                                                bgMusic.play().then(() => { isPlaying = true; }).catch(() => {});
+                                            }, 500);
+                                        }
+                                        // Permitir abrir con el sobre o el texto
+                                        document.getElementById("envelope").addEventListener("click", abrirInvitacion);
+                                        document.getElementById("footerText").addEventListener("click", abrirInvitacion);
+                                        // Botón música
+                                        document.getElementById("musicButton").addEventListener("click", function() {
+                                            const icon = this.querySelector("i");
+                                            if (isPlaying) {
+                                                bgMusic.pause();
+                                                icon.className = "fas fa-play";
+                                            } else {
+                                                bgMusic.play().catch(() => {});
+                                                icon.className = "fas fa-pause";
+                                            }
+                                            isPlaying = !isPlaying;
+                                        });
+                                    </script>
+                                </body>
                             </html>
                         </div>
                     </div>
