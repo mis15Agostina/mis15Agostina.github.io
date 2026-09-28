@@ -30,24 +30,17 @@
                 }
             }
         </style>
-        <!-- This site is optimized with the Yoast SEO plugin v28.2 - https://yoast.com/product/yoast-seo-wordpress/ -->
         <meta name="description" content="Solo falta confirmar tu presencia."/>
         <meta property="og:locale" content="es_ES"/>
         <meta property="og:type" content="article"/>
         <meta property="og:title" content="MIS 15 AGOSTINA"/>
         <meta property="og:description" content="Solo falta confirmar tu presencia."/>
-        <meta property="og:url" content=""/>
         <meta property="og:site_name" content="La tarjeta digital"/>
-        <meta property="article:modified_time" content="2026-06-17T23:02:41+00:00"/>
         <meta property="og:image" content="assets/agostina-07.jpeg"/>
         <meta property="og:image:width" content="1066"/>
         <meta property="og:image:height" content="1600"/>
         <meta property="og:image:type" content="image/jpeg"/>
         <meta name="twitter:card" content="summary_large_image"/>
-        <meta name="twitter:label1" content="Tiempo de lectura"/>
-        <meta name="twitter:data1" content="3 minutos"/>
-        
-        <!-- / Yoast SEO plugin. -->
         <title>MIS 15 AGOSTINA</title>
         <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin/>
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -400,14 +393,6 @@
 
             
         </style>
-        <link rel='stylesheet' id='forminator-module-css-52136-css' href='assets/style-52136.css' media='all'/>
-        <link rel='stylesheet' id='forminator-icons-css' href='assets/forminator-icons.min.css' media='all'/>
-        <link rel='stylesheet' id='forminator-utilities-css' href='assets/forminator-utilities.min.css' media='all'/>
-        <link rel='stylesheet' id='forminator-grid-default-css' href='assets/forminator-grid.open.min.css' media='all'/>
-        <link rel='stylesheet' id='forminator-forms-material-base-css' href='assets/forminator-form-material.base.min.css' media='all'/>
-        <link rel='stylesheet' id='forminator-forms-material-select2-css' href='assets/forminator-form-material.select2.min.css' media='all'/>
-        <link rel='stylesheet' id='forminator-forms-material-full-css' href='assets/forminator-form-material.full.min.css' media='all'/>
-        <link rel='stylesheet' id='intlTelInput-forminator-css-css' href='assets/intlTelInput.min.css' media='all'/>
         <link rel='stylesheet' id='buttons-css' href='assets/buttons.min.css' media='all'/>
         <style id="wp-block-site-logo-inline-css">
             .wp-block-site-logo {
@@ -1984,7 +1969,6 @@
                 outline: none;
             }
 
-            /* Force the site to always display in light mode */
             html {
                 color-scheme: light !important;
             }
@@ -2099,134 +2083,7 @@
         <link rel='stylesheet' id='uagb-block-css-css' href='assets/custom-style-blocks.css' media='all'/>
         <script id="jquery-core-js" src="assets/jquery.min.js"></script>
         <script id="jquery-migrate-js" src="assets/jquery-migrate.min.js"></script>
-        <script id="forminator-select2-js" src="assets/select2.full.min.js"></script>
-        <script id="forminator-jquery-validate-js" src="assets/jquery.validate.min.js"></script>
-        <script id="forminator-form-js" src="assets/forminator-form.min.js"></script>
-        <script id="forminator-front-scripts-js-extra">
-            var ForminatorFront = {
-                "ajaxUrl": "",
-                "cform": {
-                    "processing": "Enviando formulario, espera por favor",
-                    "error": "Ha ocurrido un error al procesar el formulario. Por favor, int\u00e9ntalo de nuevo",
-                    "upload_error": "Ha ocurrido un error de subida al procesar el formulario. Por favor, int\u00e9ntalo de nuevo",
-                    "pagination_prev": "Anterior",
-                    "pagination_next": "Siguiente",
-                    "pagination_go": "Enviar",
-                    "gateway": {
-                        "processing": "Procesando el pago, espera por favor",
-                        "paid": "\u00a1Correcto! Pago confirmado. Enviando formulario, espera por favor",
-                        "error": "\u00a1Error! Algo sali\u00f3 mal al verificar el pago"
-                    },
-                    "captcha_error": "CAPTCHA no v\u00e1lido",
-                    "no_file_chosen": "Ning\u00fan archivo seleccionado",
-                    "intlTelInput_utils_script": "assets/intlTelInputUtils.js",
-                    "process_error": "Int\u00e9ntalo de nuevo.",
-                    "payment_failed": "No se ha podido procesar el pago. Int\u00e9ntalo de nuevo.",
-                    "payment_cancelled": "Se ha cancelado el pago",
-                    "checkout_session_invalid": "Tu sesi\u00f3n de pago se actualiz\u00f3. Int\u00e9ntalo de nuevo.",
-                    "payment_session_refresh_failed": "No pudimos actualizar tu sesi\u00f3n de pago. Actualiza la p\u00e1gina e int\u00e9ntalo de nuevo."
-                },
-                "poll": {
-                    "processing": "Enviando voto, por favor, espera",
-                    "error": "Ocurri\u00f3 un error guardando el voto. Intentalo nuevamente"
-                },
-                "quiz": {
-                    "view_results": "Ver los resultados"
-                },
-                "select2": {
-                    "load_more": "Cargando m\u00e1s resultados...",
-                    "no_result_found": "No se han encontrado resultados",
-                    "searching": "Buscando\u2026",
-                    "loaded_error": "No se han podido cargar los resultados."
-                }
-            };
-            //# sourceURL=forminator-front-scripts-js-extra 
-        </script>
-        <script id="forminator-front-scripts-js" src="assets/front.multi.min.js"></script>
-        <script id="forminator-front-scripts-js-after">
-            (function($, document, window) {
-                "use strict";
-                (function() {
-                    $(function() {
-                        if (window.elementorFrontend) {
-                            if (typeof elementorFrontend.hooks !== "undefined") {
-                                elementorFrontend.hooks.addAction("frontend/element_ready/global", function($scope) {
-                                    if ($scope.find("#forminator-module-52136").length > 0) {
-                                        if (typeof ($.fn.forminatorLoader) !== 'undefined') {
-                                            renderForminatorAjax(52136, {
-                                                "action": "forminator_load_form",
-                                                "type": "forminator_forms",
-                                                "id": "52136",
-                                                "render_id": 0,
-                                                "is_preview": false,
-                                                "preview_data": [],
-                                                "last_submit_data": [],
-                                                "nonce": "2dd743b916",
-                                                "extra": {
-                                                    "_wp_http_referer": "",
-                                                    "page_id": 52112,
-                                                    "referer_url": ""
-                                                }
-                                            }, 0);
-                                        }
-                                    }
-                                });
-                            }
-                            // Elementor Popup
-                            $(document).on('elementor/popup/show', () => {
-                                if (typeof ($.fn.forminatorLoader) !== 'undefined') {
-                                    renderForminatorAjax(52136, {
-                                        "action": "forminator_load_form",
-                                        "type": "forminator_forms",
-                                        "id": "52136",
-                                        "render_id": 0,
-                                        "is_preview": false,
-                                        "preview_data": [],
-                                        "last_submit_data": [],
-                                        "nonce": "2dd743b916",
-                                        "extra": {
-                                            "_wp_http_referer": "",
-                                            "page_id": 52112,
-                                            "referer_url": ""
-                                        }
-                                    }, 0);
-                                }
-                            }
-                            );
-                        }
-                        if (typeof ($.fn.forminatorLoader) === 'undefined') {
-                            console.log('forminator scripts not loaded');
-                        } else {
-                            renderForminatorAjax(52136, {
-                                "action": "forminator_load_form",
-                                "type": "forminator_forms",
-                                "id": "52136",
-                                "render_id": 0,
-                                "is_preview": false,
-                                "preview_data": [],
-                                "last_submit_data": [],
-                                "nonce": "2dd743b916",
-                                "extra": {
-                                    "_wp_http_referer": "",
-                                    "page_id": 52112,
-                                    "referer_url": ""
-                                }
-                            }, 0);
-                        }
-                    });
-                    function renderForminatorAjax(id, frontLoaderConfig, renderId) {
-                        var front_loader_config = frontLoaderConfig;
-                        front_loader_config.extra.referer_url = document.referrer;
-                        $('#forminator-module-' + id + '[data-forminator-render="' + renderId + '"]').forminatorLoader(front_loader_config);
-                    }
-                }
-                )();
-            }(jQuery, document, window));
-            //# sourceURL=forminator-front-scripts-js-after 
-        </script>
-        <script id="forminator-intlTelInput-js" src="assets/intlTelInput.min.js"></script>
-                                <meta name="generator" content="WordPress 7.0.4"/>
-                <style class="wp-fonts-local">
+        <style class="wp-fonts-local">
             @font-face {
                 font-family: Inter;
                 font-style: normal;
@@ -10834,36 +10691,28 @@
                                     <style>
                                         :root {
                                             --color-principal: #8a6179;
-                                            /* color pricipal invitación */
                                             --color-texto: #c7757f;
-                                            /* color textos invitación */
                                             --color-fondo: #ffffff;
                                             --color-hoja: #ffffff;
                                             --youtube-id: "KxnpFKZowcs";
-                                            /* música */
                                             --youtube-inicio: 1;
                                             --titulo-h2: "AGOSTINA";
                                             --titulo-h3: "MIS 15 AÑOS";
                                         }
 
-                                        /* === GENERALES === */
                                         body {
                                             font-family: 'Montserrat', sans-serif;
                                             margin: 0;
                                             background: var(--color-fondo);
                                             color: var(--color-texto);
-                                            /* No centramos todo el body */
                                             overflow-x: hidden;
-                                            /* evita scroll horizontal sin bloquear el vertical */
                                         }
 
-                                        /* Centrado solo dentro de la pantalla de bienvenida */
                                         #welcomeScreen {
                                             text-align: center;
                                             text-transform: uppercase;
                                         }
 
-                                        /* === CONTENEDOR PRINCIPAL === */
                                         #welcomeScreen {
                                             position: fixed;
                                             inset: 0;
@@ -10876,7 +10725,6 @@
                                             transition: opacity 1s ease;
                                         }
 
-                                        /* === ENCABEZADO === */
                                         #welcomeHeader {
                                             margin-bottom: 60px;
                                         }
@@ -10888,7 +10736,6 @@
                                             text-transform: uppercase;
                                         }
 
-                                        /* estilos individuales */
                                         #welcomeHeader h2 {
                                             font-size: 1.2em;
                                             font-weight: 500;
@@ -10901,7 +10748,6 @@
                                             margin-top: 5px;
                                         }
 
-                                        /* textos desde root */
                                         #welcomeHeader h2::after {
                                             content: var(--titulo-h2);
                                             color: var(--color-texto);
@@ -10912,12 +10758,10 @@
                                             color: var(--color-texto);
                                         }
 
-                                        /* Forzar Montserrat en los títulos del header */
                                         #welcomeHeader h2::after, #welcomeHeader h3::after {
                                             font-family: 'Montserrat', sans-serif;
                                         }
 
-                                        /* === TARJETA ELEGANTE === */
                                         .invite-card {
                                             position: relative;
                                             background: var(--color-hoja);
@@ -10935,7 +10779,6 @@
                                             transform: translateY(-5px);
                                         }
 
-                                        /* === CINTA DECORATIVA === */
                                         .invite-card::before {
                                             content: "";
                                             position: absolute;
@@ -10949,7 +10792,6 @@
                                             box-shadow: 0 1px 3px rgba(0,0,0,0.1);
                                         }
 
-                                        /* === TEXTO INTERNO === */
                                         .invite-card p {
                                             margin: 6px 0;
                                             font-size: 0.95em;
@@ -10962,7 +10804,6 @@
                                             letter-spacing: 1px;
                                         }
 
-                                        /* === TEXTO FLOTANTE FUERA DEL SOBRE === */
                                         .footer-floating {
                                             margin-top: 25px;
                                             font-weight: 600;
@@ -10989,7 +10830,6 @@
                                             }
                                         }
 
-                                        /* === BOTÓN DE MÚSICA === */
                                         #musicButton {
                                             position: fixed;
                                             bottom: 20px;
@@ -11009,7 +10849,6 @@
                                             z-index: 99999;
                                         }
 
-                                        /* === ANIMACIONES === */
                                         .fade {
                                             opacity: 0;
                                             transform: translateY(10px);
@@ -11046,9 +10885,7 @@
                                         const params = new URLSearchParams(window.location.search);
                                         const nombreParam = params.get("n");
                                         const cantidadParam = params.get("c");
-                                        // Nombre
                                         document.getElementById("nombreInvitado").textContent = (nombreParam || "INVITADO ESPECIAL").toUpperCase();
-                                        // Cantidad
                                         let mensaje = "";
                                         const cantidad = parseInt(cantidadParam);
                                         if (cantidadParam === null) {
@@ -11061,16 +10898,13 @@
                                             mensaje = `TENEMOS ${cantidad} LUGARES<br>RESERVADOS PARA USTEDES`;
                                         }
                                         document.getElementById("mensajeInvitado").innerHTML = mensaje;
-                                        // Audio local
                                         const bgMusic = document.getElementById('bg-music');
                                         let isPlaying = false;
-                                        // Animaciones
                                         window.addEventListener("DOMContentLoaded", () => {
                                             setTimeout( () => document.getElementById("welcomeHeader").classList.add("show"), 600);
                                             setTimeout( () => document.getElementById("envelope").classList.add("show"), 1900);
                                             setTimeout( () => document.getElementById("footerText").classList.add("show"), 3200);
                                         });
-                                        // Función para abrir invitación
                                         function abrirInvitacion() {
                                             const welcome = document.getElementById("welcomeScreen");
                                             welcome.style.opacity = "0";
@@ -11081,10 +10915,8 @@
                                                 bgMusic.play().then(() => { isPlaying = true; }).catch(() => {});
                                             }, 500);
                                         }
-                                        // Permitir abrir con el sobre o el texto
                                         document.getElementById("envelope").addEventListener("click", abrirInvitacion);
                                         document.getElementById("footerText").addEventListener("click", abrirInvitacion);
-                                        // Botón música
                                         document.getElementById("musicButton").addEventListener("click", function() {
                                             const icon = this.querySelector("i");
                                             if (isPlaying) {
@@ -11332,7 +11164,7 @@
                                 <div class="uagb-block-372df0ac uagb-infobox__content-wrap  uagb-infobox-icon-above-title uagb-infobox-image-valign-top wp-block-uagb-info-box">
                                     <div class="uagb-ifb-content">
                                         <div class="uagb-ifb-image-content">
-                                            <img decoding="async" src="https://latarjetadigital.ar/wp-content/uploads/2024/11/ffffff-blanco-icono-12.gif" alt="" width="70" height="70" loading="lazy"/>
+                                            <img decoding="async" src="assets/ffffff-blanco-icono-12.gif" alt="" width="70" height="70" loading="lazy"/>
                                         </div>
                                         <div class="uagb-ifb-title-wrap">
                                             <h5 class="uagb-ifb-title">REGALO</h5>
@@ -11354,7 +11186,7 @@
                                                 <div class="uagb-block-8c957939 uagb-infobox__content-wrap  uagb-infobox-icon-above-title uagb-infobox-image-valign-top wp-block-uagb-info-box">
                                                     <div class="uagb-ifb-content">
                                                         <div class="uagb-ifb-image-content">
-                                                            <img decoding="async" src="https://latarjetadigital.ar/wp-content/uploads/2024/11/ffffff-blanco-icono-12.gif" alt="" width="70" height="70" loading="lazy"/>
+                                                            <img decoding="async" src="assets/ffffff-blanco-icono-12.gif" alt="" width="70" height="70" loading="lazy"/>
                                                         </div>
                                                         <div class="uagb-ifb-title-wrap">
                                                             <h5 class="uagb-ifb-title">REGALO</h5>
@@ -11807,7 +11639,6 @@
                                                     return val;
                                             }
                                             return '#b7b7b7';
-                                            // fallback final
                                         }
                                         ;
                                         const color1 = getColor('--color-texto', '--color-negro');
@@ -11836,8 +11667,6 @@
                     </div>
                     <div class="wp-block-uagb-container uagb-block-d13f1392 alignfull uagb-is-root-container">
                         <div class="uagb-container-inner-blocks-wrap">
-                            <!-- Mostrar nombre y cantidad de pases -->
-
                             <div data-aos="fade-up" data-aos-duration="400" data-aos-delay="0" data-aos-easing="ease" data-aos-once="true" class="wp-block-uagb-container uagb-block-0f9cbbef">
                                 <div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
                                 <div class="uagb-block-115d966b uagb-infobox__content-wrap  uagb-infobox-icon-above-title uagb-infobox-image-valign-top  wp-block-uagb-info-box--has-margin wp-block-uagb-info-box">
@@ -11861,76 +11690,6 @@
                                 </div>
                                 <div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
                             </div>
-                            <script>
-                                (function() {
-                                    const params = new URLSearchParams(window.location.search);
-                                    const c = params.get("c");
-                                    // SI NO VIENE c → por defecto 1 persona
-                                    const max = c === null ? 1 : parseInt(c, 10);
-                                    if (isNaN(max))
-                                        return;
-                                    let aplicado = false;
-                                    const observer = new MutationObserver( () => {
-                                        if (aplicado)
-                                            return;
-                                        document.querySelectorAll(".forminator-field").forEach(field => {
-                                            const label = field.querySelector("label");
-                                            if (!label)
-                                                return;
-                                            if (!label.textContent.toLowerCase().includes("número de personas"))
-                                                return;
-                                            const select = field.querySelector("select");
-                                            if (!select)
-                                                return;
-                                            aplicado = true;
-                                            observer.disconnect();
-                                            /* ======================
- c = 0 → selector normal
- ====================== */
-                                            if (max === 0) {
-                                                field.style.display = "block";
-                                                return;
-                                            }
-                                            /* ======================
- c = 1 (o sin c) → ocultar selector
- ====================== */
-                                            if (max === 1) {
-                                                field.style.display = "none";
-                                                return;
-                                            }
-                                            /* ======================
- c >= 2 → limitar opciones
- ====================== */
-                                            field.style.display = "block";
-                                            Array.from(select.options).forEach(option => {
-                                                const match = option.textContent.match(/\d+/);
-                                                if (!match)
-                                                    return;
-                                                const cantidad = parseInt(match[0], 10);
-                                                if (cantidad > max) {
-                                                    option.remove();
-                                                }
-                                            }
-                                            );
-                                            // seleccionar por defecto 1 persona
-                                            select.selectedIndex = 0;
-                                        }
-                                        );
-                                    }
-                                    );
-                                    observer.observe(document.body, {
-                                        childList: true,
-                                        subtree: true
-                                    });
-                                }
-                                )();
-                            </script>
-                        </div>
-                    </div>
-                    <div class="wp-block-uagb-container uagb-block-e6428ad3 alignfull uagb-is-root-container">
-                        <div class="wp-block-uagb-image uagb-block-5ddc455e wp-block-uagb-image--layout-default wp-block-uagb-image--effect-static wp-block-uagb-image--align-none">
-                            <figure class="wp-block-uagb-image__figure">
-                            </figure>
                         </div>
                     </div>
                     <div data-aos="fade-up" data-aos-duration="400" data-aos-delay="0" data-aos-easing="ease" data-aos-once="true" class="wp-block-uagb-container uagb-block-a3de84b3 alignfull uagb-is-root-container">
